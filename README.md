@@ -3,7 +3,7 @@
 Example
 
 ```js
-
+import Base from "./MDN/Base.js"
 let client = new Base();
 (async () => {
     let mdn = await client.mdn.fetch("String", { limit: 4, page: 3, locale: "fr"})
