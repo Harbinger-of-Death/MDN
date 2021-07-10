@@ -1,6 +1,5 @@
 const Result = require("./Result.js")
-
-let collection = new (require("../Collection/childrenCache.js").RaidenCol)
+let collection = new (require("./@Collections/Collection/childrenCache.js").RaidenCol)
 class ResultManager {
     constructor(data = {}, limit) {
         /**
@@ -33,7 +32,7 @@ class ResultManager {
     }
     /**
      * The documents cache
-     * @return {import("../Typings/collection").RaidenCol<string, Result>}
+     * @return {import("./@Collections/Typings/collection").RaidenCol<string, Result>}
      */
     get cache() {
         return this._documents
